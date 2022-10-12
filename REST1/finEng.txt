@@ -1,0 +1,4 @@
+auto    car
+kirja   book
+koira   dog
+kissa  cat
