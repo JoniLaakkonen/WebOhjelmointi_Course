@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+h1, h3{
+  margin-bottom: 10px;
+}
+p{
+
+}
+a{
+  color: black;
+}
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  background: radial-gradient(circle at 100% -40%, #fefaedaa 65%, #12a39aaa 2%, #95afe8aa 100%);
+  overflow: hidden;
+}
+header{
+  margin: 0 15% 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+nav{
+  margin: 0 15% 10px;
+  height: 50px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+nav ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+main{
+  width: 37%;
+  height: 250px;
+  margin: 0 0 0 15%;
+  float: left;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+}
+aside{
+  width: 27%;
+  height: 250px;
+  margin: 0 15% 0 0;
+  float: right;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+}
+footer{
+  margin: 300px 15% 0;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+input{
+  width: 95%;
+  height: 20px;
+}
+textarea{
+  width: 95%;
+  height: 60px;
+  resize: none;
+}
+textarea:focus, input:focus{
+  outline: 0;
+}
+button{
+  width: 95%;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+  header{
+    margin: 0 2% 10px;
+  }
+  nav{
+    margin: 0 2% 10px;
+  }
+  main{
+    margin: 0 0 0 2%;
+    width: 50%;
+  }
+  aside{
+    margin: 0 2% 0 0;
+    width: 35%;
+  }
+  footer{
+    margin: 300px 2% 0;
+  }
+}
