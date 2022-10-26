@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --primary: #11998e;
+    --secondary: #38ef7d;
+    --white: #fff;
+    --gray: #9b9b9b;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+nav{
+    position: sticky;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: space-around;
+}
+nav h3{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding-left: 1.5rem;
+    font-size: large;
+    font-weight: 600;
+  }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+}
+form{
+    display: flex;
+    width: 75%;
+    padding: 50px;
+    border-radius: 20px;
+    flex-flow: column;
+    align-items: center;
+    background-color: powderblue;
+}
+form h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: #262626;
+}
+input {
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    width: 50%;
+    font-size: var(--inputFontSize);
+    line-height: var(--inputLineHeight);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: box-shadow var(--transitionDuration);
+}
+  
+input::placeholder {
+    color: #787878;
+}
+  
+input:focus {
+    outline: none;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+}
+#submit{
+    cursor: pointer;
+}
