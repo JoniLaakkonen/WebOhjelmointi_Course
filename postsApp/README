@@ -5,5 +5,5 @@ Install depencies:
 Start server (/serveri):
   nodemon .serveri
   
-Start webpage(/posts-app):
+Start webpage(/posts_app):
   npm start
