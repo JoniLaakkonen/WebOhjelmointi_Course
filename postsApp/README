@@ -1,0 +1,9 @@
+Install depencies:
+  npm install
+  
+  
+Start server (/serveri):
+  nodemon .serveri
+  
+Start webpage(/posts-app):
+  npm start
