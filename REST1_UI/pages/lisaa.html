@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator || Lisaa sanapari</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const $fin = $('#fi');
+        const $eng = $('#en');
+        $('[name="Submit"]').click(function () {
+
+          let sanapari = {
+            fin: $fin.val().toLowerCase(),
+            eng: $eng.val().toLowerCase(),
+          };
+
+          $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/index/lisaa',
+            data: sanapari,
+            success: function(uusiSanapari){
+              alert("lisääminen onnistui");
+            },
+            error: function(){
+             alert("Epäonnistui yrittäessä lisätä sanaparia ( " + sanapari.fin +", " + sanapari.eng + " )");
+            }
+          })
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html"><h3>Translator</h3></a>
+        <ul>
+          <li><a href="./haku.html">Hae sanaa</a></li>
+          <li><a href="">Lisää sanoja</a></li>
+        </ul>
+    </nav>
+    <main>
+      <form id="form" name="form">
+        <h2>Lisää sanapari</h2>
+          <td>
+          <input
+              name="fi"
+              id="fi"
+              type="text"
+              value=""
+              placeholder="Suomeksi"
+              maxlength="35"
+              size="35"
+          />
+          </td>
+          <td>
+          <input
+              name="en"
+              id="en"
+              type="text"
+              value=""
+              placeholder="Englanniksi"
+              maxlength="35"
+              size="35"
+          />
+          </td>
+          <td>
+          <input name="Submit" id="submit" type="submit" value="Lisää" />
+          </td>
+      </form>
+    </main>
+  </body>
+</html>

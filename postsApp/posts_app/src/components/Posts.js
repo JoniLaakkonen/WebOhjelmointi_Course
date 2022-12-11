@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Post from "./Post";
 
 export default function Posts() {
   const [loading, setLoading] = useState(true);
@@ -40,10 +41,9 @@ export default function Posts() {
           </thead>
           <tbody>
             {data.map((item) => (
-              <tr id="posts_tr" key={item.id}>
-                <th className="postsrow-title">{item.title}</th>
-                <th className="postsrow-body">{item.body}</th>
-              </tr>
+              <Fragment>
+                <Post post={item}/>
+              </Fragment>
             ))}
           </tbody>
         </table>

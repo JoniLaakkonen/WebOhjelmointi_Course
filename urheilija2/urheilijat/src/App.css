@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  background-color: rgba(220, 246, 250, 0.688);
+}
+header ul{
+  list-style-type: none;
+}
+header li{
+  float: left;
+  padding: 1rem;
+}
+header li a {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: large;
+  text-decoration: none;
+}
+header li:hover {
+  background-color: #5ea8b65e;
+}
+
+main #urheilijat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-flow: column;
+  gap: 10px;
+  padding: 1rem;
+}
+button {
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  background-color: rgba(13, 149, 142, 0.447);
+}
+button:hover{
+  background-color: rgba(78, 203, 197, 0.447);
+  cursor: pointer;
+}
+form {
+  display: flex;
+  gap: 5px;
+}
+#flex {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  margin: 2rem 0;
+}
+#flex * {
+  width: 60%;
+  font-size: 16px;
+  text-align: center;
+}

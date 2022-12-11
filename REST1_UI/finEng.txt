@@ -1,0 +1,7 @@
+auto  car
+kirja  book
+koira  dog
+kissa  cat
+kala  fish
+isä  father
+kolikko  coin
